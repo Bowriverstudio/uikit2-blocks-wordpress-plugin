@@ -181,7 +181,7 @@ class WP_UiKit2_Blocks {
 			array(
 				array(
 					'slug' => 'wp-uikit2-blocks',
-					'title' => __( 'uikit2 Blocks', 'wp-uikit2-blocks' ),
+					'title' => __( 'UiKit2 Blocks', 'wp-uikit2-blocks' ),
 				),
 			)
 		);
