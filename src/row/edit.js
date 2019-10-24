@@ -8,7 +8,7 @@ const { withSelect, withDispatch } = wp.data;
 const { applyFilters } = wp.hooks;
 const { compose } = wp.compose;
 
-const ALLOWED_BLOCKS = [ 'wp-bootstrap-blocks/column' ];
+const ALLOWED_BLOCKS = [ 'wp-uikit2-blocks/column' ];
 
 const arrayToObjectStructure = ( templates ) => {
 	// If templates are not in array structure do nothing
@@ -53,18 +53,18 @@ const addMissingTemplateIcons = ( templates ) => {
 let templates = [
 	{
 		name: '1-1',
-		title: __( '2 Columns (1:1)', 'wp-bootstrap-blocks' ),
+		title: __( '2 Columns (1:1)', 'wp-uikit2-blocks' ),
 		icon: <SVG width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><Path fillRule="evenodd" clipRule="evenodd" d="M39 12C40.1046 12 41 12.8954 41 14V34C41 35.1046 40.1046 36 39 36H9C7.89543 36 7 35.1046 7 34V14C7 12.8954 7.89543 12 9 12H39ZM39 34V14H25V34H39ZM23 34H9V14H23V34Z" /></SVG>,
 		templateLock: 'all',
 		template: [
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 6,
 				},
 			],
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 6,
 				},
@@ -73,18 +73,18 @@ let templates = [
 	},
 	{
 		name: '1-2',
-		title: __( '2 Columns (1:2)', 'wp-bootstrap-blocks' ),
+		title: __( '2 Columns (1:2)', 'wp-uikit2-blocks' ),
 		icon: <SVG width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><Path fillRule="evenodd" clipRule="evenodd" d="M39 12C40.1046 12 41 12.8954 41 14V34C41 35.1046 40.1046 36 39 36H9C7.89543 36 7 35.1046 7 34V14C7 12.8954 7.89543 12 9 12H39ZM39 34V14H20V34H39ZM18 34H9V14H18V34Z" /></SVG>,
 		templateLock: 'all',
 		template: [
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 4,
 				},
 			],
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 8,
 				},
@@ -93,18 +93,18 @@ let templates = [
 	},
 	{
 		name: '2-1',
-		title: __( '2 Columns (2:1)', 'wp-bootstrap-blocks' ),
+		title: __( '2 Columns (2:1)', 'wp-uikit2-blocks' ),
 		icon: <SVG width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><Path fillRule="evenodd" clipRule="evenodd" d="M39 12C40.1046 12 41 12.8954 41 14V34C41 35.1046 40.1046 36 39 36H9C7.89543 36 7 35.1046 7 34V14C7 12.8954 7.89543 12 9 12H39ZM39 34V14H30V34H39ZM28 34H9V14H28V34Z" /></SVG>,
 		templateLock: 'all',
 		template: [
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 8,
 				},
 			],
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 4,
 				},
@@ -113,24 +113,24 @@ let templates = [
 	},
 	{
 		name: '1-1-1',
-		title: __( '3 Columns (1:1:1)', 'wp-bootstrap-blocks' ),
+		title: __( '3 Columns (1:1:1)', 'wp-uikit2-blocks' ),
 		icon: <SVG width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><Path fillRule="evenodd" d="M41 14a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h30a2 2 0 0 0 2-2V14zM28.5 34h-9V14h9v20zm2 0V14H39v20h-8.5zm-13 0H9V14h8.5v20z" /></SVG>,
 		templateLock: 'all',
 		template: [
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 4,
 				},
 			],
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 4,
 				},
 			],
 			[
-				'wp-bootstrap-blocks/column',
+				'wp-uikit2-blocks/column',
 				{
 					sizeMd: 4,
 				},
@@ -142,7 +142,7 @@ let templates = [
 const useOldObjectTemplateStructure = applyFilters( 'wpBootstrapBlocks.row.useOldObjectTemplateStructure', true );
 if ( useOldObjectTemplateStructure ) {
 	// eslint-disable-next-line no-console
-	console.warn( 'wp-bootstrap-blocks: The old object template structure (<= v1.2.0) of the row block is deprecated, please migrate your templates to the new array structure (v1.3.0+). As soon as you have updated your template structure you need to disable the old object template structure with the wpBootstrapBlocks.row.useOldObjectTemplateStructure filter.' );
+	console.warn( 'wp-uikit2-blocks: The old object template structure (<= v1.2.0) of the row block is deprecated, please migrate your templates to the new array structure (v1.3.0+). As soon as you have updated your template structure you need to disable the old object template structure with the wpBootstrapBlocks.row.useOldObjectTemplateStructure filter.' );
 	templates = arrayToObjectStructure( templates );
 }
 templates = applyFilters( 'wpBootstrapBlocks.row.templates', templates );
@@ -154,11 +154,11 @@ if ( enableCustomTemplate ) {
 	templates.push(
 		{
 			name: 'custom',
-			title: __( 'Custom', 'wp-bootstrap-blocks' ),
+			title: __( 'Custom', 'wp-uikit2-blocks' ),
 			icon: templateIconMissing,
 			templateLock: false,
 			template: [
-				[ 'wp-bootstrap-blocks/column' ],
+				[ 'wp-uikit2-blocks/column' ],
 			],
 		}
 	);
@@ -198,17 +198,17 @@ class BootstrapRowEdit extends Component {
 		const alignmentControls = [
 			{
 				icon: 'editor-alignleft',
-				title: __( 'Align columns left', 'wp-bootstrap-blocks' ),
+				title: __( 'Align columns left', 'wp-uikit2-blocks' ),
 				align: 'left',
 			},
 			{
 				icon: 'editor-aligncenter',
-				title: __( 'Align columns center', 'wp-bootstrap-blocks' ),
+				title: __( 'Align columns center', 'wp-uikit2-blocks' ),
 				align: 'center',
 			},
 			{
 				icon: 'editor-alignright',
-				title: __( 'Align columns right', 'wp-bootstrap-blocks' ),
+				title: __( 'Align columns right', 'wp-uikit2-blocks' ),
 				align: 'right',
 			},
 		];
@@ -216,17 +216,17 @@ class BootstrapRowEdit extends Component {
 		const verticalAlignmentControls = [
 			{
 				icon: alignTop,
-				title: __( 'Align columns top', 'wp-bootstrap-blocks' ),
+				title: __( 'Align columns top', 'wp-uikit2-blocks' ),
 				align: 'top',
 			},
 			{
 				icon: alignCenter,
-				title: __( 'Align columns center', 'wp-bootstrap-blocks' ),
+				title: __( 'Align columns center', 'wp-uikit2-blocks' ),
 				align: 'center',
 			},
 			{
 				icon: alignBottom,
-				title: __( 'Align columns bottom', 'wp-bootstrap-blocks' ),
+				title: __( 'Align columns bottom', 'wp-uikit2-blocks' ),
 				align: 'bottom',
 			},
 		];
@@ -235,11 +235,11 @@ class BootstrapRowEdit extends Component {
 			<Fragment>
 				<InspectorControls>
 					<PanelBody
-						title={ __( 'Change layout', 'wp-bootstrap-blocks' ) }
+						title={ __( 'Change layout', 'wp-uikit2-blocks' ) }
 					>
-						<ul className="wp-bootstrap-blocks-template-selector-list">
+						<ul className="wp-uikit2-blocks-template-selector-list">
 							{ templates.map( ( template, index ) => ( // eslint-disable-line no-shadow
-								<li className="wp-bootstrap-blocks-template-selector-button" key={ index }>
+								<li className="wp-uikit2-blocks-template-selector-button" key={ index }>
 									<IconButton
 										label={ template.title }
 										icon={ template.icon }
@@ -248,17 +248,17 @@ class BootstrapRowEdit extends Component {
 										} }
 										className={ selectedTemplateName === template.name ? 'is-active' : null }
 									>
-										<div className="wp-bootstrap-blocks-template-selector-button-label">{ template.title }</div>
+										<div className="wp-uikit2-blocks-template-selector-button-label">{ template.title }</div>
 									</IconButton>
 								</li>
 							) ) }
 						</ul>
 					</PanelBody>
 					<PanelBody
-						title={ __( 'Row options', 'wp-bootstrap-blocks' ) }
+						title={ __( 'Row options', 'wp-uikit2-blocks' ) }
 					>
 						<CheckboxControl
-							label={ __( 'No Gutters', 'wp-bootstrap-blocks' ) }
+							label={ __( 'No Gutters', 'wp-uikit2-blocks' ) }
 							checked={ noGutters }
 							onChange={ ( isChecked ) => setAttributes( { noGutters: isChecked } ) }
 						/>

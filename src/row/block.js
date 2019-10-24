@@ -1,5 +1,5 @@
 /**
- * BLOCK: wp-bootstrap-blocks/row
+ * BLOCK: wp-uikit2-blocks/row
  */
 
 import edit from './edit';
@@ -8,15 +8,15 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
 
-registerBlockType( 'wp-bootstrap-blocks/row', {
+registerBlockType( 'wp-uikit2-blocks/row', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Row', 'wp-bootstrap-blocks' ), // Block title.
+	title: __( 'Row', 'wp-uikit2-blocks' ), // Block title.
 	icon: 'layout', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'wp-bootstrap-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'wp-uikit2-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'Bootstrap Blocks', 'wp-bootstrap-blocks' ),
-		__( 'Bootstrap', 'wp-bootstrap-blocks' ),
-		__( 'Row', 'wp-bootstrap-blocks' ),
+		__( 'Bootstrap Blocks', 'wp-uikit2-blocks' ),
+		__( 'Bootstrap', 'wp-uikit2-blocks' ),
+		__( 'Row', 'wp-uikit2-blocks' ),
 	],
 
 	supports: {

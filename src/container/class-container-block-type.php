@@ -1,19 +1,19 @@
 <?php
 /**
- * Register wp-bootstrap-blocks/container block type.
+ * Register wp-uikit2-blocks/container block type.
  *
- * @package wp-bootstrap-blocks/container
+ * @package wp-uikit2-blocks/container
  */
 
-namespace WP_Bootstrap_Blocks\Container;
+namespace WP_UiKit2_Blocks\Container;
 
-use WP_Bootstrap_Blocks\Block_Type;
+use WP_UiKit2_Blocks\Block_Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( '\WP_Bootstrap_Blocks\Container\Container_Block_Type', false ) ) :
+if ( ! class_exists( '\WP_UiKit2_Blocks\Container\Container_Block_Type', false ) ) :
 
 	/**
 	 * Class Container_Block_Type
@@ -24,7 +24,7 @@ if ( ! class_exists( '\WP_Bootstrap_Blocks\Container\Container_Block_Type', fals
 		 *
 		 * @var string
 		 */
-		protected $name = 'wp-bootstrap-blocks/container';
+		protected $name = 'wp-uikit2-blocks/container';
 
 		/**
 		 * Block attributes.

@@ -1,19 +1,19 @@
 <?php
 /**
- * Register wp-bootstrap-blocks/row block type.
+ * Register wp-uikit2-blocks/row block type.
  *
- * @package wp-bootstrap-blocks/row
+ * @package wp-uikit2-blocks/row
  */
 
-namespace WP_Bootstrap_Blocks\Row;
+namespace WP_UiKit2_Blocks\Row;
 
-use WP_Bootstrap_Blocks\Block_Type;
+use WP_UiKit2_Blocks\Block_Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( '\WP_Bootstrap_Blocks\Row\Row_Block_Type', false ) ) :
+if ( ! class_exists( '\WP_UiKit2_Blocks\Row\Row_Block_Type', false ) ) :
 
 	/**
 	 * Class Row_Block_Type
@@ -24,7 +24,7 @@ if ( ! class_exists( '\WP_Bootstrap_Blocks\Row\Row_Block_Type', false ) ) :
 		 *
 		 * @var string
 		 */
-		protected $name = 'wp-bootstrap-blocks/row';
+		protected $name = 'wp-uikit2-blocks/row';
 
 		/**
 		 * Block attributes.

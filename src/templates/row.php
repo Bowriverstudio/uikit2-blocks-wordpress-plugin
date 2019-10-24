@@ -1,28 +1,28 @@
 <?php
 /**
- * Template for wp-bootstrap-blocks/row
+ * Template for wp-uikit2-blocks/row
  *
- * This template can be overridden by copying it to theme/wp-bootstrap-blocks/row.php.
+ * This template can be overridden by copying it to theme/wp-uikit2-blocks/row.php.
  *
- * @package wp-bootstrap-blocks/templates/row
+ * @package wp-uikit2-blocks/templates/row
  * @version 1.1.0
  */
 
 /**
  * Block attributes.
- * Defined in wp_bootstrap_blocks_get_template() which requires this template.
+ * Defined in wp_uikit2_blocks_get_template() which requires this template.
  *
  * @var $attributes array
  */
 
 /**
  * Block content.
- * Defined in wp_bootstrap_blocks_get_template() which requires this template.
+ * Defined in wp_uikit2_blocks_get_template() which requires this template.
  *
  * @var $content string
  */
 
-$classes = array( 'wp-bootstrap-blocks-row' );
+$classes = array( 'wp-uikit2-blocks-row' );
 if ( array_key_exists( 'className', $attributes ) ) {
 	array_push( $classes, $attributes['className'] );
 }
@@ -57,8 +57,8 @@ if ( array_key_exists( 'verticalAlignment', $attributes ) ) {
 	}
 }
 
-$classes = apply_filters( 'wp_bootstrap_blocks_row_wrapper_classes', $classes, $attributes );
-$row_classes = apply_filters( 'wp_bootstrap_blocks_row_classes', $row_classes, $attributes );
+$classes = apply_filters( 'wp_uikit2_blocks_row_wrapper_classes', $classes, $attributes );
+$row_classes = apply_filters( 'wp_uikit2_blocks_row_classes', $row_classes, $attributes );
 ?>
 <div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
 	<div class="<?php echo esc_attr( implode( ' ', $row_classes ) ); ?>">

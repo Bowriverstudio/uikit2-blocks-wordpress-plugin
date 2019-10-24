@@ -70,7 +70,7 @@ function my_template_path( $template_path ) {
 
 * `$template_path` (`string`) Template directory name in theme.
 
-### wp_bootstrap_blocks_get_template
+### wp_uikit2_blocks_get_template
 
 Possibility to overwrite the located template path before it gets loaded.
 
@@ -84,14 +84,14 @@ Possibility to overwrite the located template path before it gets loaded.
 #### Usage:
 
 ```php
-add_filter( 'wp_bootstrap_blocks_get_template', 'my_located_template', 10, 4 );
+add_filter( 'wp_uikit2_blocks_get_template', 'my_located_template', 10, 4 );
 
 function my_located_template( $located, $template_name, $template_path, $default_path ) {
     return 'mytheme/special-templates/block.php';
 }
 ```
 
-### wp_bootstrap_blocks_locate_template
+### wp_uikit2_blocks_locate_template
 
 Possibility to overwrite the located template path.
 
@@ -104,7 +104,7 @@ Possibility to overwrite the located template path.
 #### Usage:
 
 ```php
-add_filter( 'wp_bootstrap_blocks_locate_template', 'my_template_locater', 10, 3 );
+add_filter( 'wp_uikit2_blocks_locate_template', 'my_template_locater', 10, 3 );
 
 function my_template_locater( $template, $template_name, $template_path ) {
     return 'mytheme/special-templates/block.php';

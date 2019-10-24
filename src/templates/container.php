@@ -1,28 +1,28 @@
 <?php
 /**
- * Template for wp-bootstrap-blocks/container
+ * Template for wp-uikit2-blocks/container
  *
- * This template can be overridden by copying it to theme/wp-bootstrap-blocks/container.php.
+ * This template can be overridden by copying it to theme/wp-uikit2-blocks/container.php.
  *
- * @package wp-bootstrap-blocks/templates/container
+ * @package wp-uikit2-blocks/templates/container
  * @version 1.0.0
  */
 
 /**
  * Block attributes.
- * Defined in wp_bootstrap_blocks_get_template() which requires this template.
+ * Defined in wp_uikit2_blocks_get_template() which requires this template.
  *
  * @var $attributes array
  */
 
 /**
  * Block content.
- * Defined in wp_bootstrap_blocks_get_template() which requires this template.
+ * Defined in wp_uikit2_blocks_get_template() which requires this template.
  *
  * @var $content string
  */
 
-$classes = array( 'wp-bootstrap-blocks-container' );
+$classes = array( 'wp-uikit2-blocks-container' );
 
 if ( array_key_exists( 'isFluid', $attributes ) && $attributes['isFluid'] ) {
 	array_push( $classes, 'container-fluid' );
@@ -36,7 +36,7 @@ if ( array_key_exists( 'className', $attributes ) ) {
 	array_push( $classes, $attributes['className'] );
 }
 
-$classes = apply_filters( 'wp_bootstrap_blocks_container_classes', $classes, $attributes );
+$classes = apply_filters( 'wp_uikit2_blocks_container_classes', $classes, $attributes );
 ?>
 <div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
 	<?php echo $content; // phpcs:ignore ?>

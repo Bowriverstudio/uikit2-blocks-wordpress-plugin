@@ -1,19 +1,19 @@
 <?php
 /**
- * Register wp-bootstrap-blocks/button block type.
+ * Register wp-uikit2-blocks/button block type.
  *
- * @package wp-bootstrap-blocks/button
+ * @package wp-uikit2-blocks/button
  */
 
-namespace WP_Bootstrap_Blocks\Button;
+namespace WP_UiKit2_Blocks\Button;
 
-use WP_Bootstrap_Blocks\Block_Type;
+use WP_UiKit2_Blocks\Block_Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( '\WP_Bootstrap_Blocks\Button\Button_Block_Type', false ) ) :
+if ( ! class_exists( '\WP_UiKit2_Blocks\Button\Button_Block_Type', false ) ) :
 
 	/**
 	 * Class Button_Block_Type
@@ -24,7 +24,7 @@ if ( ! class_exists( '\WP_Bootstrap_Blocks\Button\Button_Block_Type', false ) ) 
 		 *
 		 * @var string
 		 */
-		protected $name = 'wp-bootstrap-blocks/button';
+		protected $name = 'wp-uikit2-blocks/button';
 
 		/**
 		 * Block attributes.

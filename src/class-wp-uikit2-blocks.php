@@ -2,29 +2,29 @@
 /**
  * Main class
  *
- * @package wp-bootstrap-blocks
+ * @package wp-uikit2-blocks
  */
 
-namespace WP_Bootstrap_Blocks;
+namespace WP_UiKit2_Blocks;
 
-use WP_Bootstrap_Blocks\Button\Button_Block_Type;
-use WP_Bootstrap_Blocks\Column\Column_Block_Type;
-use WP_Bootstrap_Blocks\Container\Container_Block_Type;
-use WP_Bootstrap_Blocks\Row\Row_Block_Type;
+use WP_UiKit2_Blocks\Button\Button_Block_Type;
+use WP_UiKit2_Blocks\Column\Column_Block_Type;
+use WP_UiKit2_Blocks\Container\Container_Block_Type;
+use WP_UiKit2_Blocks\Row\Row_Block_Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 /**
- * Class WP_Bootstrap_Blocks
+ * Class WP_UiKit2_Blocks
  */
-class WP_Bootstrap_Blocks {
+class WP_UiKit2_Blocks {
 
 	/**
-	 * WP_Bootstrap_Blocks instance.
+	 * WP_UiKit2_Blocks instance.
 	 *
-	 * @var WP_Bootstrap_Blocks
+	 * @var WP_UiKit2_Blocks
 	 */
 	protected static $instance = null;
 
@@ -40,7 +40,7 @@ class WP_Bootstrap_Blocks {
 	 *
 	 * @var string
 	 */
-	public $token = 'wp-bootstrap-blocks';
+	public $token = 'wp-uikit2-blocks';
 
 	/**
 	 * The plugin assets directory.
@@ -57,7 +57,7 @@ class WP_Bootstrap_Blocks {
 	public $assets_url;
 
 	/**
-	 * WP_Bootstrap_Blocks constructor.
+	 * WP_UiKit2_Blocks constructor.
 	 */
 	public function __construct() {
 		$this->define_constants();
@@ -65,14 +65,15 @@ class WP_Bootstrap_Blocks {
 		$this->includes();
 		$this->init_hooks();
 		$this->register_block_types();
+
 	}
 
 	/**
 	 * Define plugin constants.
 	 */
 	protected function define_constants() {
-		if ( ! defined( 'WP_BOOTSTRAP_BLOCKS_ABSPATH' ) ) {
-			define( 'WP_BOOTSTRAP_BLOCKS_ABSPATH', trailingslashit( dirname( WP_UIKIT2_BLOCKS_PLUGIN_FILE ) ) );
+		if ( ! defined( 'WP_UIKIT2_BLOCKS_ABSPATH' ) ) {
+			define( 'WP_UIKIT2_BLOCKS_ABSPATH', trailingslashit( dirname( WP_UIKIT2_BLOCKS_PLUGIN_FILE ) ) );
 		}
 	}
 
@@ -81,7 +82,7 @@ class WP_Bootstrap_Blocks {
 	 */
 	protected function init_plugin_environment() {
 		// Load plugin environment variables
-		$this->assets_dir = WP_BOOTSTRAP_BLOCKS_ABSPATH . 'dist';
+		$this->assets_dir = WP_UIKIT2_BLOCKS_ABSPATH . 'dist';
 		$this->assets_url = esc_url( trailingslashit( plugins_url( '/build/', WP_UIKIT2_BLOCKS_PLUGIN_FILE ) ) );
 	}
 
@@ -90,12 +91,12 @@ class WP_Bootstrap_Blocks {
 	 */
 	public function includes() {
 		// Load plugin class files
-		require_once WP_BOOTSTRAP_BLOCKS_ABSPATH . 'src/wp-bootstrap-blocks-functions.php';
-		require_once WP_BOOTSTRAP_BLOCKS_ABSPATH . 'src/class-block-type.php';
-		require_once WP_BOOTSTRAP_BLOCKS_ABSPATH . 'src/container/class-container-block-type.php';
-		require_once WP_BOOTSTRAP_BLOCKS_ABSPATH . 'src/row/class-row-block-type.php';
-		require_once WP_BOOTSTRAP_BLOCKS_ABSPATH . 'src/column/class-column-block-type.php';
-		require_once WP_BOOTSTRAP_BLOCKS_ABSPATH . 'src/button/class-button-block-type.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/wp-uikit2-blocks-functions.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/class-block-type.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/container/class-container-block-type.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/row/class-row-block-type.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/column/class-column-block-type.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/button/class-button-block-type.php';
 	}
 
 	/**
@@ -122,7 +123,7 @@ class WP_Bootstrap_Blocks {
 	 * Load frontend block assets.
 	 */
 	public function enqueue_block_assets() {
-		$enqueue_block_assets = apply_filters( 'wp_bootstrap_blocks_enqueue_block_assets', true );
+		$enqueue_block_assets = apply_filters( 'wp_uikit2_blocks_enqueue_block_assets', true );
 		if ( ! $enqueue_block_assets ) {
 			return;
 		}
@@ -179,8 +180,8 @@ class WP_Bootstrap_Blocks {
 			$categories,
 			array(
 				array(
-					'slug' => 'wp-bootstrap-blocks',
-					'title' => __( 'Bootstrap Blocks', 'wp-bootstrap-blocks' ),
+					'slug' => 'wp-uikit2-blocks',
+					'title' => __( 'uikit2 Blocks', 'wp-uikit2-blocks' ),
 				),
 			)
 		);
@@ -190,7 +191,7 @@ class WP_Bootstrap_Blocks {
 	 * Load plugin textdomain
 	 */
 	public function load_plugin_textdomain() {
-		$domain = 'wp-bootstrap-blocks'; // textdomain can't be stored in class variable since it must be a single string literal
+		$domain = 'wp-uikit2-blocks'; // textdomain can't be stored in class variable since it must be a single string literal
 		load_plugin_textdomain( $domain, false, dirname( plugin_basename( WP_UIKIT2_BLOCKS_PLUGIN_FILE ) ) . '/languages/' );
 	}
 
@@ -205,10 +206,10 @@ class WP_Bootstrap_Blocks {
 	}
 
 	/**
-	 * Main WP_Bootstrap_Blocks Instance
-	 * Ensures only one instance of WP_Bootstrap_Blocks is loaded or can be loaded.
+	 * Main WP_UiKit2_Blocks Instance
+	 * Ensures only one instance of WP_UiKit2_Blocks is loaded or can be loaded.
 	 *
-	 * @return WP_Bootstrap_Blocks Plugin instance
+	 * @return WP_UiKit2_Blocks Plugin instance
 	 */
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {

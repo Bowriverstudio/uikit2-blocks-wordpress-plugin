@@ -31,10 +31,10 @@ let bgColorOptions = [
 bgColorOptions = applyFilters( 'wpBootstrapBlocks.column.bgColorOptions', bgColorOptions );
 
 let paddingOptions = [
-	{ label: __( 'None', 'wp-bootstrap-blocks' ), value: '' },
-	{ label: __( 'Small', 'wp-bootstrap-blocks' ), value: 'p-2' },
-	{ label: __( 'Medium', 'wp-bootstrap-blocks' ), value: 'p-3' },
-	{ label: __( 'Large', 'wp-bootstrap-blocks' ), value: 'p-5' },
+	{ label: __( 'None', 'wp-uikit2-blocks' ), value: '' },
+	{ label: __( 'Small', 'wp-uikit2-blocks' ), value: 'p-2' },
+	{ label: __( 'Medium', 'wp-uikit2-blocks' ), value: 'p-3' },
+	{ label: __( 'Large', 'wp-uikit2-blocks' ), value: 'p-5' },
 ];
 
 paddingOptions = applyFilters( 'wpBootstrapBlocks.column.paddingOptions', paddingOptions );
@@ -48,42 +48,42 @@ export default class BootstrapColumnEdit extends Component {
 			<Fragment>
 				<InspectorControls>
 					<PanelBody
-						title={ __( 'Column size', 'wp-bootstrap-blocks' ) }
+						title={ __( 'Column size', 'wp-uikit2-blocks' ) }
 						initialOpen={ false }
 					>
 						<ColumnSizeRangeControl
-							label={ __( 'Xl Columns', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Xl Columns', 'wp-uikit2-blocks' ) }
 							attributeName="sizeXl"
 							value={ sizeXl }
 							setAttributes={ setAttributes }
 						/>
 						<ColumnSizeRangeControl
-							label={ __( 'Lg Columns', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Lg Columns', 'wp-uikit2-blocks' ) }
 							attributeName="sizeLg"
 							value={ sizeLg }
 							setAttributes={ setAttributes }
 						/>
 						<ColumnSizeRangeControl
-							label={ __( 'Md Columns', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Md Columns', 'wp-uikit2-blocks' ) }
 							attributeName="sizeMd"
 							value={ sizeMd }
 							setAttributes={ setAttributes }
 						/>
 						<ColumnSizeRangeControl
-							label={ __( 'Sm Columns', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Sm Columns', 'wp-uikit2-blocks' ) }
 							attributeName="sizeSm"
 							value={ sizeSm }
 							setAttributes={ setAttributes }
 						/>
 						<ColumnSizeRangeControl
-							label={ __( 'Xs Columns', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Xs Columns', 'wp-uikit2-blocks' ) }
 							attributeName="sizeXs"
 							value={ sizeXs }
 							setAttributes={ setAttributes }
 						/>
 					</PanelBody>
 					<PanelBody
-						title={ __( 'Background color', 'wp-bootstrap-blocks' ) }
+						title={ __( 'Background color', 'wp-uikit2-blocks' ) }
 						initialOpen={ false }
 					>
 						<ColorPalette
@@ -108,18 +108,18 @@ export default class BootstrapColumnEdit extends Component {
 						/>
 						{ bgColor ?
 							<CheckboxControl
-								label={ __( 'Center content vertically in row', 'wp-bootstrap-blocks' ) }
+								label={ __( 'Center content vertically in row', 'wp-uikit2-blocks' ) }
 								checked={ centerContent }
 								onChange={ ( isChecked ) => setAttributes( { centerContent: isChecked } ) }
-								help={ __( 'This setting only applies if there is no vertical alignment set on the parent row block.', 'wp-bootstrap-blocks' ) }
+								help={ __( 'This setting only applies if there is no vertical alignment set on the parent row block.', 'wp-uikit2-blocks' ) }
 							/> : null
 						}
 					</PanelBody>
 					<PanelBody
-						title={ __( 'Padding (inside column)', 'wp-bootstrap-blocks' ) }
+						title={ __( 'Padding (inside column)', 'wp-uikit2-blocks' ) }
 						initialOpen={ false }>
 						<SelectControl
-							label={ __( 'Size', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Size', 'wp-uikit2-blocks' ) }
 							value={ padding }
 							options={ paddingOptions }
 							onChange={ ( value ) => {

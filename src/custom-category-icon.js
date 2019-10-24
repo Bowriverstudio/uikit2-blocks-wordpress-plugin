@@ -1,7 +1,7 @@
 const { updateCategory } = wp.blocks;
 const { Path, Rect, SVG } = wp.components;
 
-updateCategory( 'wp-bootstrap-blocks', {
+updateCategory( 'wp-uikit2-blocks', {
 	icon: (
 		<SVG viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
 			<Rect stroke="#979797" fill="#6EA644" x="-110.5" y="-123.5" width="340" height="367" />

@@ -1,5 +1,5 @@
 /**
- * BLOCK: wp-bootstrap-blocks/container
+ * BLOCK: wp-uikit2-blocks/container
  */
 
 const { __ } = wp.i18n;
@@ -13,15 +13,15 @@ const useFluidContainerPerDefault = applyFilters( 'wpBootstrapBlocks.container.u
 
 let customMarginOptions = [
 	{
-		label: __( 'Small', 'wp-bootstrap-blocks' ),
+		label: __( 'Small', 'wp-uikit2-blocks' ),
 		value: 'mb-2',
 	},
 	{
-		label: __( 'Medium', 'wp-bootstrap-blocks' ),
+		label: __( 'Medium', 'wp-uikit2-blocks' ),
 		value: 'mb-3',
 	},
 	{
-		label: __( 'Large', 'wp-bootstrap-blocks' ),
+		label: __( 'Large', 'wp-uikit2-blocks' ),
 		value: 'mb-5',
 	},
 ];
@@ -29,21 +29,21 @@ customMarginOptions = applyFilters( 'wpBootstrapBlocks.container.customMarginOpt
 
 const marginOptions = [
 	{
-		label: __( 'None', 'wp-bootstrap-blocks' ),
+		label: __( 'None', 'wp-uikit2-blocks' ),
 		value: 'mb-0',
 	},
 	...customMarginOptions,
 ];
 
-registerBlockType( 'wp-bootstrap-blocks/container', {
+registerBlockType( 'wp-uikit2-blocks/container', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Container', 'wp-bootstrap-blocks' ), // Block title.
+	title: __( 'Container', 'wp-uikit2-blocks' ), // Block title.
 	icon: 'feedback', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'wp-bootstrap-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'wp-uikit2-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'Bootstrap Blocks', 'wp-bootstrap-blocks' ),
-		__( 'Bootstrap', 'wp-bootstrap-blocks' ),
-		__( 'Container', 'wp-bootstrap-blocks' ),
+		__( 'Bootstrap Blocks', 'wp-uikit2-blocks' ),
+		__( 'Bootstrap', 'wp-uikit2-blocks' ),
+		__( 'Container', 'wp-uikit2-blocks' ),
 	],
 
 	supports: {
@@ -65,14 +65,14 @@ registerBlockType( 'wp-bootstrap-blocks/container', {
 				<InspectorControls>
 					<PanelBody>
 						<CheckboxControl
-							label={ __( 'Fluid', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Fluid', 'wp-uikit2-blocks' ) }
 							checked={ isFluid }
 							onChange={ ( isChecked ) => {
 								setAttributes( { isFluid: isChecked } );
 							} }
 						/>
 						<SelectControl
-							label={ __( 'Margin After', 'wp-bootstrap-blocks' ) }
+							label={ __( 'Margin After', 'wp-uikit2-blocks' ) }
 							value={ marginAfter }
 							options={ marginOptions }
 							onChange={ ( selectedMargin ) => {

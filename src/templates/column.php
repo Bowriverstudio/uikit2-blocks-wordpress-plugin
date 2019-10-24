@@ -1,23 +1,23 @@
 <?php
 /**
- * Template for wp-bootstrap-blocks/column
+ * Template for wp-uikit2-blocks/column
  *
- * This template can be overridden by copying it to theme/wp-bootstrap-blocks/column.php.
+ * This template can be overridden by copying it to theme/wp-uikit2-blocks/column.php.
  *
- * @package wp-bootstrap-blocks/templates/column
+ * @package wp-uikit2-blocks/templates/column
  * @version 1.1.0
  */
 
 /**
  * Block attributes.
- * Defined in wp_bootstrap_blocks_get_template() which requires this template.
+ * Defined in wp_uikit2_blocks_get_template() which requires this template.
  *
  * @var $attributes array
  */
 
 /**
  * Block content.
- * Defined in wp_bootstrap_blocks_get_template() which requires this template.
+ * Defined in wp_uikit2_blocks_get_template() which requires this template.
  *
  * @var $content string
  */
@@ -61,7 +61,7 @@ if ( array_key_exists( 'padding', $attributes ) ) {
 	array_push( $column_content_classes, $attributes['padding'] );
 }
 
-$classes = apply_filters( 'wp_bootstrap_blocks_column_classes', $classes, $attributes );
+$classes = apply_filters( 'wp_uikit2_blocks_column_classes', $classes, $attributes );
 ?>
 
 <div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">

@@ -13,8 +13,8 @@ class BootstrapButtonEdit extends Component {
 		const { url, text, style, alignment } = attributes;
 
 		let styleOptions = [
-			{ label: __( 'Primary', 'wp-bootstrap-blocks' ), value: 'primary' },
-			{ label: __( 'Secondary', 'wp-bootstrap-blocks' ), value: 'secondary' },
+			{ label: __( 'Primary', 'wp-uikit2-blocks' ), value: 'primary' },
+			{ label: __( 'Secondary', 'wp-uikit2-blocks' ), value: 'secondary' },
 		];
 		styleOptions = applyFilters( 'wpBootstrapBlocks.button.styleOptions', styleOptions );
 
@@ -34,7 +34,7 @@ class BootstrapButtonEdit extends Component {
 					<InspectorControls>
 						<PanelBody>
 							<SelectControl
-								label={ __( 'Style', 'wp-bootstrap-blocks' ) }
+								label={ __( 'Style', 'wp-uikit2-blocks' ) }
 								value={ style }
 								options={ styleOptions }
 								onChange={ ( selectedStyle ) => {
@@ -52,7 +52,7 @@ class BootstrapButtonEdit extends Component {
 				</div>
 				{ isSelected && (
 					<form
-						className="wp-block-wp-bootstrap-blocks-button-link"
+						className="wp-block-wp-uikit2-blocks-button-link"
 						onSubmit={ ( event ) => event.preventDefault() }>
 						<Dashicon icon="admin-links" />
 						<URLInput

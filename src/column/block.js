@@ -1,5 +1,5 @@
 /**
- * BLOCK: wp-bootstrap-blocks/column
+ * BLOCK: wp-uikit2-blocks/column
  */
 
 import edit from './edit';
@@ -8,17 +8,17 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
 
-registerBlockType( 'wp-bootstrap-blocks/column', {
+registerBlockType( 'wp-uikit2-blocks/column', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Column', 'wp-bootstrap-blocks' ), // Block title.
+	title: __( 'Column', 'wp-uikit2-blocks' ), // Block title.
 	icon: 'menu', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'wp-bootstrap-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'wp-uikit2-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'Bootstrap Blocks', 'wp-bootstrap-blocks' ),
-		__( 'Bootstrap', 'wp-bootstrap-blocks' ),
-		__( 'Column', 'wp-bootstrap-blocks' ),
+		__( 'Bootstrap Blocks', 'wp-uikit2-blocks' ),
+		__( 'Bootstrap', 'wp-uikit2-blocks' ),
+		__( 'Column', 'wp-uikit2-blocks' ),
 	],
-	parent: [ 'wp-bootstrap-blocks/row' ],
+	parent: [ 'wp-uikit2-blocks/row' ],
 
 	// attributes are defined server side with register_block_type(). This is needed to make default attributes available in the blocks render callback.
 

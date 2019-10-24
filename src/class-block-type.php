@@ -2,16 +2,16 @@
 /**
  * Main class
  *
- * @package wp-bootstrap-blocks
+ * @package wp-uikit2-blocks
  */
 
-namespace WP_Bootstrap_Blocks;
+namespace WP_UiKit2_Blocks;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( '\WP_Bootstrap_Blocks\Block_Type', false ) ) :
+if ( ! class_exists( '\WP_UiKit2_Blocks\Block_Type', false ) ) :
 
 	/**
 	 * Class Block_Type
@@ -70,14 +70,14 @@ if ( ! class_exists( '\WP_Bootstrap_Blocks\Block_Type', false ) ) :
 		}
 
 		/**
-		 * Render callback for wp-bootstrap-blocks/row block.
+		 * Render callback for wp-uikit2-blocks/row block.
 		 *
 		 * @param array  $attributes Block attributes.
 		 * @param string $content HTML content of block.
 		 * @return string Rendered block.
 		 */
 		public function render_callback( $attributes, $content ) {
-			return wp_bootstrap_blocks_get_template( $this->get_template_name(), $attributes, $content );
+			return wp_uikit2_blocks_get_template( $this->get_template_name(), $attributes, $content );
 		}
 
 		/**
@@ -87,7 +87,7 @@ if ( ! class_exists( '\WP_Bootstrap_Blocks\Block_Type', false ) ) :
 		 */
 		protected function get_filter_prefix() {
 			// Replace all special characters in block type name with underscore.
-			// Eg. wp-bootstrap-blocks/myblock => wp_bootstrap_blocks_myblock
+			// Eg. wp-uikit2-blocks/myblock => wp_uikit2_blocks_myblock
 			return preg_replace( '/[-\/]/', '_', $this->name );
 		}
 

@@ -1,2 +1,11 @@
-.wp-bootstrap-blocks-row.alignfull>.row{margin-left:0;margin-right:0}
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-uikit2-blocks-row.alignfull > .row {
+  margin-left: 0;
+  margin-right: 0; }
 
+
+/*# sourceMappingURL=style.css.map*/

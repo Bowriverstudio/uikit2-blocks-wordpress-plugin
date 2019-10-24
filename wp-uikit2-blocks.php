@@ -24,10 +24,10 @@ if ( ! defined( 'WP_UIKIT2_BLOCKS_PLUGIN_FILE' ) ) {
 	define( 'WP_UIKIT2_BLOCKS_PLUGIN_FILE', __FILE__ );
 }
 
-// Include the main WP_Bootstrap_Blocks class.
-if ( ! class_exists( \WP_Bootstrap_Blocks\WP_Bootstrap_Blocks::class ) ) {
-	require_once plugin_dir_path( WP_UIKIT2_BLOCKS_PLUGIN_FILE ) . 'src/class-wp-bootstrap-blocks.php';
+// Include the main WP_UiKit2_Blocks class.
+if ( ! class_exists( \WP_UiKit2_Blocks\WP_UiKit2_Blocks::class ) ) {
+	require_once plugin_dir_path( WP_UIKIT2_BLOCKS_PLUGIN_FILE ) . 'src/class-wp-uikit2-blocks.php';
 }
 
 // Initialize plugin
-\WP_Bootstrap_Blocks\WP_Bootstrap_Blocks::instance();
+\WP_UiKit2_Blocks\WP_UiKit2_Blocks::instance();
