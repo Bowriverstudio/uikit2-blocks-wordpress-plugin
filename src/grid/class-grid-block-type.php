@@ -1,11 +1,11 @@
 <?php
 /**
- * Register wp-uikit2-blocks/container block type.
+ * Register wp-uikit2-blocks/grid block type.
  *
- * @package wp-uikit2-blocks/container
+ * @package wp-uikit2-blocks/grid
  */
 
-namespace WP_UiKit2_Blocks\Container;
+namespace WP_UiKit2_Blocks\Grid;
 
 use WP_UiKit2_Blocks\Block_Type;
 
@@ -13,18 +13,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( '\WP_UiKit2_Blocks\Container\Container_Block_Type', false ) ) :
+if ( ! class_exists( '\WP_UiKit2_Blocks\Grid\Grid_Block_Type', false ) ) :
 
 	/**
-	 * Class Container_Block_Type
+	 * Class Grid_Block_Type
 	 */
-	class Container_Block_Type extends Block_Type {
+	class 	Grid_Block_Type extends Block_Type {
 		/**
 		 * Name of block type including namespace.
 		 *
 		 * @var string
 		 */
-		protected $name = 'wp-uikit2-blocks/container';
+		protected $name = 'wp-uikit2-blocks/grid';
 
 		/**
 		 * Block attributes.
@@ -32,12 +32,13 @@ if ( ! class_exists( '\WP_UiKit2_Blocks\Container\Container_Block_Type', false )
 		 * @var array
 		 */
 		protected $attributes = array(
+			'gridGutter' => array (
+				'type' => 'string',
+			),
 			'isFluid' => array(
 				'type' => 'boolean',
 			),
-			'marginAfter' => array(
-				'type' => 'string',
-			),
+
 		);
 
 		/**

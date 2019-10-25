@@ -17,7 +17,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: src/class-wp-bootstrap-blocks.php:183
 #: src/column/block.js:17
-#: src/container/block.js:44
+#: src/grid/block.js:44
 #: src/row/block.js:17
 #: src/button/block.js:17
 msgid "Bootstrap Blocks"
@@ -45,22 +45,22 @@ msgid "%s does not exist."
 msgstr ""
 
 #: src/column/edit.js:34
-#: src/container/block.js:32
+#: src/grid/block.js:32
 msgid "None"
 msgstr ""
 
 #: src/column/edit.js:35
-#: src/container/block.js:16
+#: src/grid/block.js:16
 msgid "Small"
 msgstr ""
 
 #: src/column/edit.js:36
-#: src/container/block.js:20
+#: src/grid/block.js:20
 msgid "Medium"
 msgstr ""
 
 #: src/column/edit.js:37
-#: src/container/block.js:24
+#: src/grid/block.js:24
 msgid "Large"
 msgstr ""
 
@@ -114,22 +114,22 @@ msgid "Column"
 msgstr ""
 
 #: src/column/block.js:18
-#: src/container/block.js:45
+#: src/grid/block.js:45
 #: src/row/block.js:18
 #: src/button/block.js:18
 msgid "Bootstrap"
 msgstr ""
 
-#: src/container/block.js:40
-#: src/container/block.js:46
-msgid "Container"
+#: src/grid/block.js:40
+#: src/grid/block.js:46
+msgid "Grid"
 msgstr ""
 
-#: src/container/block.js:68
+#: src/grid/block.js:68
 msgid "Fluid"
 msgstr ""
 
-#: src/container/block.js:75
+#: src/grid/block.js:75
 msgid "Margin After"
 msgstr ""
 

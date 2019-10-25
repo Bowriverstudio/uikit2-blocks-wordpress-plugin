@@ -86,6 +86,30 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../gutenberg-course/blocks/01-static/icon.js":
+/*!****************************************************!*\
+  !*** ../gutenberg-course/blocks/01-static/icon.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+var icon = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("svg", {
+  width: "20px",
+  height: "20px",
+  viewBox: "0 0 100 100",
+  xmlns: "http://www.w3.org/2000/svg"
+}, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("path", {
+  d: "m3.1914 63.043l65.23 34.41c0.14453 0.078125 0.30859 0.11328 0.46875 0.11328 0.20312 0 0.40625-0.0625 0.57812-0.18359l28.109-19.949c0.26562-0.1875 0.42188-0.49219 0.42188-0.81641v-38.301c0-0.37109-0.20703-0.71484-0.53516-0.88672l-21.566-11.242-32.609-17.211-11.047-5.9492c-0.33594-0.17969-0.74219-0.15625-1.0547 0.066406l-28.109 19.969c-0.26562 0.1875-0.42188 0.49219-0.42188 0.81641v38.281c0.003906 0.37109 0.20703 0.71094 0.53516 0.88281zm39.156-52.301l3.332 1.7578 0.82812 1.0234 0.6875 2.0078-0.1875 2.0391-1.0703 1.9531-1.8711 1.7461-2.5781 1.418-3.0781 0.94922-3.3945 0.43359-3.4609-0.10937-3.3047-0.66797-2.8828-1.1641-2.2891-1.582-1.5234-1.8398-0.69141-2.0273 0.1875-2.0391 1.0508-1.9531 1.8711-1.7422 2.5781-1.418 3.0781-0.94531 3.4141-0.43359 3.4609 0.12891 2.0117 0.41016zm-5.7617-2.9688c-0.007813 0-0.015626 0.003906-0.019532 0.003906-0.007812 0-0.011718-0.007813-0.019531-0.007813l-3.5-0.13281c-0.007813 0-0.011719 0.007812-0.019531 0.007812-0.007813 0-0.011719-0.007812-0.019532-0.007812l-3.457 0.44141c-0.007812 0-0.011719 0.011719-0.019531 0.011719s-0.015625-0.003906-0.023438-0.003906l-3.1289 0.96094c-0.007812 0.003906-0.011718 0.011719-0.019531 0.015625s-0.019531-0.003906-0.027344 0.003906l-0.45312 0.25 5.9648-4.2383 5.1523 2.7734zm-14.852 4.5664c-0.011719 0.011718-0.007813 0.027344-0.019531 0.039062-0.007813 0.011719-0.023438 0.011719-0.03125 0.027344l-1.0938 2.0352c-0.007813 0.015625 0 0.035156-0.003906 0.050782-0.003907 0.015624-0.019532 0.023437-0.023438 0.042968l-0.19531 2.1445c0 0.003906 0.003906 0.007812 0.003906 0.011718s-0.003906 0.007813-0.003906 0.011719v6.3867c0 0.015625 0.015624 0.023437 0.015624 0.039062 0.003907 0.015625-0.007812 0.027344-0.003906 0.042969l0.72266 2.1211c0.007813 0.019531 0.023438 0.027343 0.035157 0.042969 0.007812 0.011718 0.003906 0.023437 0.011719 0.03125l1.5742 1.9258c0.007813 0.007812 0.019532 0.007812 0.03125 0.015625 0.011719 0.011718 0.011719 0.027344 0.023438 0.035156l2.3398 1.5977c0.011718 0.007813 0.023437 0.003906 0.03125 0.011719 0.007812 0.003906 0.007812 0.011719 0.015624 0.015625l2.9336 1.1602c0.011719 0.003906 0.019532 0.003906 0.03125 0.007813 0.003906 0 0.007813 0.007812 0.011719 0.007812l3.3477 0.67969c0.011719 0.003906 0.023438 0.003906 0.039063 0.003906h0.003906l3.5 0.13281h0.007812c0.011719 0 0.019532 0 0.03125-0.003907l3.4336-0.4375c0.003906 0 0.003906-0.003906 0.007813-0.003906 0.011719-0.003906 0.023437-0.003906 0.035156-0.003906l3.1289-0.96484c0.007813-0.003906 0.007813-0.007813 0.011719-0.011719 0.011719-0.003906 0.023438-0.003906 0.035156-0.007812l2.625-1.4414c0.011719-0.003907 0.011719-0.019532 0.019532-0.023438 0.011718-0.007812 0.023437-0.003906 0.03125-0.011719l1.9258-1.793c0.007812-0.007812 0.003906-0.015624 0.011719-0.023437 0.011718-0.015625 0.027343-0.023437 0.039062-0.039063l1.1133-2.0586c0.007813-0.015625 0-0.03125 0.003907-0.046875 0.007812-0.019532 0.023437-0.027344 0.023437-0.046875l0.19531-2.1211c0-0.003906-0.003907-0.007813-0.003907-0.011719s0.003907-0.007812 0.003907-0.011718l-0.007813-6.3984c0-0.015625-0.015625-0.023438-0.015625-0.039062-0.003906-0.015626 0.007812-0.027344 0.003906-0.042969l-0.72266-2.1016c-0.003906-0.015625-0.019531-0.019531-0.027344-0.03125-0.007812-0.015625-0.003906-0.03125-0.011718-0.042968l-0.12109-0.14844 22.625 11.941-0.22656-0.042968c-0.007812 0-0.011719 0.003906-0.019531 0.003906s-0.011719-0.007813-0.019531-0.007813l-3.5-0.13281c-0.007813 0-0.011719 0.007812-0.019531 0.007812-0.007813 0-0.011719-0.007812-0.019532-0.007812l-3.457 0.4375c-0.007813 0-0.011719 0.011719-0.019531 0.011719-0.007813 0-0.015625-0.003907-0.023438-0.003907l-3.1289 0.96484c-0.007812 0.003906-0.011719 0.011719-0.019531 0.015625-0.007813 0.003906-0.019531 0-0.023438 0.003906l-2.6055 1.4219c-0.011718 0.003907-0.011718 0.019531-0.019531 0.023438-0.011719 0.007812-0.023437 0.003906-0.03125 0.011719l-1.9453 1.8164c-0.011719 0.011718-0.007813 0.027344-0.015625 0.039062-0.007813 0.011719-0.023438 0.011719-0.03125 0.027344l-1.0938 2.0352c-0.007813 0.015625 0 0.03125-0.007813 0.050782-0.003906 0.015624-0.019531 0.023437-0.023437 0.042968l-0.21875 2.1445c0 0.003906 0.003906 0.007812 0.003906 0.011718s-0.003906 0.007813-0.003906 0.011719v6.3867c0 0.015625 0.015625 0.023437 0.015625 0.039062 0.003906 0.015625-0.007813 0.027344-0.003907 0.042969l0.72266 2.1016c0.007812 0.019531 0.023437 0.027343 0.03125 0.042968 0.007812 0.011719 0.003906 0.023438 0.011719 0.03125l1.5742 1.9258c0.007813 0.007812 0.019532 0.007812 0.03125 0.015624 0.011719 0.011719 0.011719 0.027344 0.019532 0.035157l2.3438 1.5977c0.011718 0.007813 0.019531 0.003906 0.03125 0.011719 0.007812 0.003906 0.007812 0.011718 0.015624 0.015625l2.9531 1.1836c0.011718 0.003907 0.023437 0.003907 0.03125 0.007813 0.003906 0 0.003906 0.007813 0.011718 0.007813l3.3242 0.67969c0.015625 0.003906 0.027344 0.003906 0.039063 0.003906h0.003906l3.5195 0.10938h0.007813c0.011718 0 0.019531 0 0.03125-0.003906l3.4336-0.41406c0.003907 0 0.003907-0.003907 0.007813-0.003907 0.011718-0.003906 0.023437-0.003906 0.039062-0.007812l3.1289-0.96484c0.007813-0.003906 0.007813-0.007813 0.015626-0.011719 0.011718-0.003906 0.023437-0.003906 0.03125-0.007812l2.625-1.4414c0.011718-0.003907 0.011718-0.019532 0.019531-0.023438 0.011719-0.007812 0.019531-0.003906 0.03125-0.011719l1.9258-1.793c0.007812-0.007812 0.007812-0.019531 0.011719-0.023437 0.011719-0.015625 0.027343-0.023437 0.039062-0.039063l1.0938-2.0352c0.007813-0.015625 0-0.03125 0.003907-0.046875 0.007812-0.015625 0.019531-0.027343 0.023437-0.046875l0.21875-2.1641c0-0.003906-0.003906-0.007813-0.003906-0.011719s0.003906-0.007813 0.003906-0.011719v-6.3633c0-0.015625-0.015625-0.023437-0.015625-0.039063-0.003906-0.015624 0.007812-0.027343 0.003906-0.042968l-0.72266-2.1211c-0.007812-0.015625-0.023438-0.019531-0.03125-0.035156s-0.003906-0.03125-0.011719-0.042969l-0.13672-0.16406 16.434 8.5664-26.977 19.137-63.992-33.754 17.207-12.227zm53.234 15.617l3.3125 1.7266 0.84375 1.0312 0.69141 2.0273-0.21094 2.0195-1.0508 1.9766-1.8672 1.7617-2.5781 1.375-3.082 0.96875-3.3945 0.43359-3.4805-0.12891-3.2812-0.66797-2.9062-1.1406-2.2891-1.582-1.5234-1.8398-0.69141-2.0273 0.20703-2.0391 1.0508-1.9531 1.8945-1.7656 2.5508-1.3945 3.0859-0.94922 3.4141-0.43359 3.4648 0.12891 1.8359 0.35938zm-6.3281 30.48v36.867l-63.98-33.746v-36.871z"
+}));
+/* harmony default export */ __webpack_exports__["default"] = (icon);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
@@ -877,106 +901,6 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/container/block.js":
-/*!********************************!*\
-  !*** ./src/container/block.js ***!
-  \********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-/**
- * BLOCK: wp-uikit2-blocks/container
- */
-var __ = wp.i18n.__;
-var registerBlockType = wp.blocks.registerBlockType;
-var _wp$editor = wp.editor,
-    InnerBlocks = _wp$editor.InnerBlocks,
-    InspectorControls = _wp$editor.InspectorControls;
-var _wp$components = wp.components,
-    SelectControl = _wp$components.SelectControl,
-    CheckboxControl = _wp$components.CheckboxControl,
-    PanelBody = _wp$components.PanelBody;
-var Fragment = wp.element.Fragment;
-var applyFilters = wp.hooks.applyFilters;
-var useFluidContainerPerDefault = applyFilters('wpBootstrapBlocks.container.useFluidContainerPerDefault', true);
-var customMarginOptions = [{
-  label: __('Small', 'wp-uikit2-blocks'),
-  value: 'mb-2'
-}, {
-  label: __('Medium', 'wp-uikit2-blocks'),
-  value: 'mb-3'
-}, {
-  label: __('Large', 'wp-uikit2-blocks'),
-  value: 'mb-5'
-}];
-customMarginOptions = applyFilters('wpBootstrapBlocks.container.customMarginOptions', customMarginOptions);
-var marginOptions = [{
-  label: __('None', 'wp-uikit2-blocks'),
-  value: 'mb-0'
-}].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(customMarginOptions));
-registerBlockType('wp-uikit2-blocks/container', {
-  // Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-  title: __('Container', 'wp-uikit2-blocks'),
-  // Block title.
-  icon: 'feedback',
-  // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-  category: 'wp-uikit2-blocks',
-  // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
-  keywords: [__('Bootstrap Blocks', 'wp-uikit2-blocks'), __('Bootstrap', 'wp-uikit2-blocks'), __('Container', 'wp-uikit2-blocks')],
-  supports: {
-    align: false
-  },
-  // attributes are defined server side with register_block_type(). This is needed to make default attributes available in the blocks render callback.
-  edit: function edit(_ref) {
-    var className = _ref.className,
-        attributes = _ref.attributes,
-        setAttributes = _ref.setAttributes;
-    var isFluid = attributes.isFluid,
-        marginAfter = attributes.marginAfter; // Ensure that isFluid value is set (when block gets added value is undefined -> use default value in this case)
-
-    if (isFluid === undefined) {
-      setAttributes({
-        isFluid: useFluidContainerPerDefault
-      });
-    }
-
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Fragment, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InspectorControls, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PanelBody, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(CheckboxControl, {
-      label: __('Fluid', 'wp-uikit2-blocks'),
-      checked: isFluid,
-      onChange: function onChange(isChecked) {
-        setAttributes({
-          isFluid: isChecked
-        });
-      }
-    }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(SelectControl, {
-      label: __('Margin After', 'wp-uikit2-blocks'),
-      value: marginAfter,
-      options: marginOptions,
-      onChange: function onChange(selectedMargin) {
-        setAttributes({
-          marginAfter: selectedMargin
-        });
-      }
-    }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
-      className: className
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InnerBlocks, null)));
-  },
-  save: function save() {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InnerBlocks.Content, null);
-  }
-});
-
-/***/ }),
-
 /***/ "./src/custom-category-icon.js":
 /*!*************************************!*\
   !*** ./src/custom-category-icon.js ***!
@@ -1024,6 +948,174 @@ updateCategory('wp-uikit2-blocks', {
 
 /***/ }),
 
+/***/ "./src/grid/block.js":
+/*!***************************!*\
+  !*** ./src/grid/block.js ***!
+  \***************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _gutterOptions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gutterOptions */ "./src/grid/gutterOptions.js");
+
+
+/**
+ * BLOCK: wp-uikit2-blocks/grid
+ */
+var __ = wp.i18n.__;
+var registerBlockType = wp.blocks.registerBlockType;
+var _wp$editor = wp.editor,
+    InnerBlocks = _wp$editor.InnerBlocks,
+    InspectorControls = _wp$editor.InspectorControls;
+var _wp$components = wp.components,
+    SelectControl = _wp$components.SelectControl,
+    CheckboxControl = _wp$components.CheckboxControl,
+    PanelBody = _wp$components.PanelBody,
+    Tooltip = _wp$components.Tooltip;
+var Fragment = wp.element.Fragment;
+var applyFilters = wp.hooks.applyFilters;
+ //
+// const useFluidContainerPerDefault = applyFilters( 'wpBootstrapBlocks.container.useFluidContainerPerDefault', true );
+//
+// let customMarginOptions = [
+// 	{
+// 		label: __( 'Small', 'wp-uikit2-blocks' ),
+// 		value: 'mb-2',
+// 	},
+// 	{
+// 		label: __( 'Medium', 'wp-uikit2-blocks' ),
+// 		value: 'mb-3',
+// 	},
+// 	{
+// 		label: __( 'Large', 'wp-uikit2-blocks' ),
+// 		value: 'mb-5',
+// 	},
+// ];
+// customMarginOptions = applyFilters( 'wpBootstrapBlocks.container.customMarginOptions', customMarginOptions );
+//
+// const marginOptions = [
+// 	{
+// 		label: __( 'None', 'wp-uikit2-blocks' ),
+// 		value: 'mb-0',
+// 	},
+// 	...customMarginOptions,
+// ];
+
+registerBlockType('wp-uikit2-blocks/grid', {
+  //https://getuikit.com/v2/docs/grid.html
+  // Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
+  title: __('Grid', 'wp-uikit2-blocks'),
+  // Block title.
+  description: __('Create a fully responsive, fluid and nestable grid layout.', 'jsforwpblocks'),
+  icon: 'feedback',
+  // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+  category: 'wp-uikit2-blocks',
+  // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+  keywords: [__('Uikit2', 'wp-uikit2-blocks'), __('Container', 'wp-uikit2-blocks'), __('Grid', 'wp-uikit2-blocks')],
+  supports: {
+    align: false
+  },
+  // attributes are defined server side with register_block_type(). This is needed to make default attributes available in the blocks render callback.
+  edit: function edit(_ref) {
+    var className = _ref.className,
+        attributes = _ref.attributes,
+        setAttributes = _ref.setAttributes;
+    var gridGutter = attributes.gridGutter,
+        isFluid = attributes.isFluid,
+        marginAfter = attributes.marginAfter; // Ensure that isFluid value is set (when block gets added value is undefined -> use default value in this case)
+
+    if (isFluid === undefined) {
+      setAttributes({
+        isFluid: useFluidContainerPerDefault
+      });
+    }
+
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Fragment, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(InspectorControls, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, {
+      title: __('Documentation', 'wp-uikit2-blocks'),
+      initialOpen: false
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, __('The grid system of UIkit follows the mobile-first approach and accomodates up to 10 grid columns. It uses units with predefined classes inside each grid, which define the column width. It is also possible to combine the grid with classes from the Flex component, although it works only in modern browsers.', 'wp-uikit2-blocks'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("br", null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+      href: "https://getuikit.com/v2/docs/grid.html#grid-gutter"
+    }, __('Reference', 'wp-uikit2-blocks')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, {
+      title: __('Grid Gutter', 'wp-uikit2-blocks'),
+      initialOpen: true
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(SelectControl, {
+      help: __("Grids automatically create a horizontal gutter between columns and a vertical one between two succeeding grids. By default, the grid gutter is wider on large screens.", "wp-uikit2-blocks"),
+      value: gridGutter,
+      options: _gutterOptions__WEBPACK_IMPORTED_MODULE_2__["default"],
+      onChange: function onChange(selectedGridGutter) {
+        setAttributes({
+          gridGutter: selectedGridGutter
+        });
+      }
+    }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+      href: "https://getuikit.com/v2/docs/grid.html#grid-gutter",
+      target: "_blank"
+    }, __('Reference', 'wp-uikit2-blocks')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(CheckboxControl, {
+      label: __('Fluid', 'wp-uikit2-blocks'),
+      checked: isFluid,
+      onChange: function onChange(isChecked) {
+        setAttributes({
+          isFluid: isChecked
+        });
+      }
+    }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: className
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(InnerBlocks, null)));
+  },
+  save: function save() {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(InnerBlocks.Content, null);
+  }
+});
+
+/***/ }),
+
+/***/ "./src/grid/gutterOptions.js":
+/*!***********************************!*\
+  !*** ./src/grid/gutterOptions.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _gutenberg_course_blocks_01_static_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../gutenberg-course/blocks/01-static/icon */ "../gutenberg-course/blocks/01-static/icon.js");
+
+
+/**
+ * BLOCK: wp-uikit2-blocks/grid
+ *
+ * Options
+ */
+
+var __ = wp.i18n.__;
+var applyFilters = wp.hooks.applyFilters;
+var customGutterOptions = [{
+  label: __('Small', 'wp-uikit2-blocks'),
+  value: 'uk-grid-small'
+}, {
+  label: __('Medium', 'wp-uikit2-blocks'),
+  value: 'uk-grid-medium'
+}, {
+  label: __('Large', 'wp-uikit2-blocks'),
+  value: 'uk-grid-large'
+}, {
+  label: __('Collapse Gutter', 'wp-uikit2-blocks'),
+  value: 'uk-grid-collapse'
+}];
+customGutterOptions = applyFilters('wpUiKit2Blocks.grid.customMarginOptions', customGutterOptions);
+var gutterOptions = [{
+  label: __('Default', 'wp-uikit2-blocks'),
+  value: 'mb-0'
+}].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(customGutterOptions));
+/* harmony default export */ __webpack_exports__["default"] = (gutterOptions);
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -1034,7 +1126,7 @@ updateCategory('wp-uikit2-blocks', {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_category_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./custom-category-icon */ "./src/custom-category-icon.js");
-/* harmony import */ var _container_block_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./container/block.js */ "./src/container/block.js");
+/* harmony import */ var _grid_block_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./grid/block.js */ "./src/grid/block.js");
 /* harmony import */ var _column_block_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./column/block.js */ "./src/column/block.js");
 /* harmony import */ var _row_block_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./row/block.js */ "./src/row/block.js");
 /* harmony import */ var _button_block_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./button/block.js */ "./src/button/block.js");

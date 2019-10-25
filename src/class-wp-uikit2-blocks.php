@@ -9,7 +9,7 @@ namespace WP_UiKit2_Blocks;
 
 use WP_UiKit2_Blocks\Button\Button_Block_Type;
 use WP_UiKit2_Blocks\Column\Column_Block_Type;
-use WP_UiKit2_Blocks\Container\Container_Block_Type;
+use WP_UiKit2_Blocks\Grid\Grid_Block_Type;
 use WP_UiKit2_Blocks\Row\Row_Block_Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -93,7 +93,7 @@ class WP_UiKit2_Blocks {
 		// Load plugin class files
 		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/wp-uikit2-blocks-functions.php';
 		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/class-block-type.php';
-		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/container/class-container-block-type.php';
+		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/grid/class-grid-block-type.php';
 		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/row/class-row-block-type.php';
 		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/column/class-column-block-type.php';
 		require_once WP_UIKIT2_BLOCKS_ABSPATH . 'src/button/class-button-block-type.php';
@@ -199,7 +199,7 @@ class WP_UiKit2_Blocks {
 	 * Register block types
 	 */
 	public function register_block_types() {
-		new Container_Block_Type();
+		new Grid_Block_Type();
 		new Row_Block_Type();
 		new Column_Block_Type();
 		new Button_Block_Type();

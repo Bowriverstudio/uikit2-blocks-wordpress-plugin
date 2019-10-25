@@ -22,16 +22,20 @@
  * @var $content string
  */
 
-$classes = array( 'wp-uikit2-blocks-container' );
+$classes = array( 'wp-uikit2-blocks-grid', 'uk-grid' );
 
 if ( array_key_exists( 'isFluid', $attributes ) && $attributes['isFluid'] ) {
 	array_push( $classes, 'container-fluid' );
 } else {
 	array_push( $classes, 'container' );
 }
-if ( array_key_exists( 'marginAfter', $attributes ) && ! empty( $attributes['marginAfter'] ) ) {
-	array_push( $classes, $attributes['marginAfter'] );
+
+// Grid Gutter
+if ( array_key_exists( 'gridGutter', $attributes ) && ! empty( $attributes['gridGutter'] ) ) {
+	array_push( $classes, $attributes['gridGutter'] );
 }
+
+// Advanced Field
 if ( array_key_exists( 'className', $attributes ) ) {
 	array_push( $classes, $attributes['className'] );
 }
