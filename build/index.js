@@ -959,7 +959,7 @@ updateCategory('wp-uikit2-blocks', {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _gutterOptions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gutterOptions */ "./src/grid/gutterOptions.js");
+/* harmony import */ var _gutterOptions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gutterOptions */ "./src/grid/gutterOptions.js");
 
 
 /**
@@ -974,35 +974,9 @@ var _wp$components = wp.components,
     SelectControl = _wp$components.SelectControl,
     CheckboxControl = _wp$components.CheckboxControl,
     PanelBody = _wp$components.PanelBody,
-    Tooltip = _wp$components.Tooltip;
+    ToggleControl = _wp$components.ToggleControl;
 var Fragment = wp.element.Fragment;
 var applyFilters = wp.hooks.applyFilters;
- //
-// const useFluidContainerPerDefault = applyFilters( 'wpBootstrapBlocks.container.useFluidContainerPerDefault', true );
-//
-// let customMarginOptions = [
-// 	{
-// 		label: __( 'Small', 'wp-uikit2-blocks' ),
-// 		value: 'mb-2',
-// 	},
-// 	{
-// 		label: __( 'Medium', 'wp-uikit2-blocks' ),
-// 		value: 'mb-3',
-// 	},
-// 	{
-// 		label: __( 'Large', 'wp-uikit2-blocks' ),
-// 		value: 'mb-5',
-// 	},
-// ];
-// customMarginOptions = applyFilters( 'wpBootstrapBlocks.container.customMarginOptions', customMarginOptions );
-//
-// const marginOptions = [
-// 	{
-// 		label: __( 'None', 'wp-uikit2-blocks' ),
-// 		value: 'mb-0',
-// 	},
-// 	...customMarginOptions,
-// ];
 
 registerBlockType('wp-uikit2-blocks/grid', {
   //https://getuikit.com/v2/docs/grid.html
@@ -1023,7 +997,8 @@ registerBlockType('wp-uikit2-blocks/grid', {
     var className = _ref.className,
         attributes = _ref.attributes,
         setAttributes = _ref.setAttributes;
-    var gridGutter = attributes.gridGutter,
+    var centerGrid = attributes.centerGrid,
+        gridGutter = attributes.gridGutter,
         isFluid = attributes.isFluid,
         marginAfter = attributes.marginAfter; // Ensure that isFluid value is set (when block gets added value is undefined -> use default value in this case)
 
@@ -1038,13 +1013,21 @@ registerBlockType('wp-uikit2-blocks/grid', {
       initialOpen: false
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, __('The grid system of UIkit follows the mobile-first approach and accomodates up to 10 grid columns. It uses units with predefined classes inside each grid, which define the column width. It is also possible to combine the grid with classes from the Flex component, although it works only in modern browsers.', 'wp-uikit2-blocks'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("br", null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
       href: "https://getuikit.com/v2/docs/grid.html#grid-gutter"
-    }, __('Reference', 'wp-uikit2-blocks')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, {
+    }, __('Reference', 'wp-uikit2-blocks')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(ToggleControl, {
+      label: __("Center grid", "wp-uikit2-blocks"),
+      checked: centerGrid,
+      onChange: function onChange(centerGrid) {
+        return setAttributes({
+          centerGrid: centerGrid
+        });
+      }
+    })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, {
       title: __('Grid Gutter', 'wp-uikit2-blocks'),
       initialOpen: true
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(SelectControl, {
       help: __("Grids automatically create a horizontal gutter between columns and a vertical one between two succeeding grids. By default, the grid gutter is wider on large screens.", "wp-uikit2-blocks"),
       value: gridGutter,
-      options: _gutterOptions__WEBPACK_IMPORTED_MODULE_2__["default"],
+      options: _gutterOptions__WEBPACK_IMPORTED_MODULE_1__["default"],
       onChange: function onChange(selectedGridGutter) {
         setAttributes({
           gridGutter: selectedGridGutter
@@ -1053,15 +1036,7 @@ registerBlockType('wp-uikit2-blocks/grid', {
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
       href: "https://getuikit.com/v2/docs/grid.html#grid-gutter",
       target: "_blank"
-    }, __('Reference', 'wp-uikit2-blocks')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelBody, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(CheckboxControl, {
-      label: __('Fluid', 'wp-uikit2-blocks'),
-      checked: isFluid,
-      onChange: function onChange(isChecked) {
-        setAttributes({
-          isFluid: isChecked
-        });
-      }
-    }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    }, __('Reference', 'wp-uikit2-blocks'))))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
       className: className
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(InnerBlocks, null)));
   },

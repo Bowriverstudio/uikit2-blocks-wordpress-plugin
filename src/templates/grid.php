@@ -24,10 +24,10 @@
 
 $classes = array( 'wp-uikit2-blocks-grid', 'uk-grid' );
 
-if ( array_key_exists( 'isFluid', $attributes ) && $attributes['isFluid'] ) {
-	array_push( $classes, 'container-fluid' );
-} else {
-	array_push( $classes, 'container' );
+//ddd($attributes);
+// Center
+if ( array_key_exists( 'centerGrid', $attributes ) && $attributes['centerGrid'] ) {
+	array_push( $classes, 'uk-container-center' );
 }
 
 // Grid Gutter

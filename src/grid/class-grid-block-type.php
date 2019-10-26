@@ -35,10 +35,9 @@ if ( ! class_exists( '\WP_UiKit2_Blocks\Grid\Grid_Block_Type', false ) ) :
 			'gridGutter' => array (
 				'type' => 'string',
 			),
-			'isFluid' => array(
+			'centerGrid' => array(
 				'type' => 'boolean',
 			),
-
 		);
 
 		/**

@@ -5,39 +5,11 @@
 const {__} = wp.i18n;
 const {registerBlockType} = wp.blocks;
 const {InnerBlocks, InspectorControls} = wp.editor;
-const {SelectControl, CheckboxControl, PanelBody, Tooltip} = wp.components;
+const {SelectControl, CheckboxControl, PanelBody, ToggleControl} = wp.components;
 const {Fragment} = wp.element;
 const {applyFilters} = wp.hooks;
 
 import gutterOptions from './gutterOptions';
-
-//
-// const useFluidContainerPerDefault = applyFilters( 'wpBootstrapBlocks.container.useFluidContainerPerDefault', true );
-//
-// let customMarginOptions = [
-// 	{
-// 		label: __( 'Small', 'wp-uikit2-blocks' ),
-// 		value: 'mb-2',
-// 	},
-// 	{
-// 		label: __( 'Medium', 'wp-uikit2-blocks' ),
-// 		value: 'mb-3',
-// 	},
-// 	{
-// 		label: __( 'Large', 'wp-uikit2-blocks' ),
-// 		value: 'mb-5',
-// 	},
-// ];
-// customMarginOptions = applyFilters( 'wpBootstrapBlocks.container.customMarginOptions', customMarginOptions );
-//
-// const marginOptions = [
-// 	{
-// 		label: __( 'None', 'wp-uikit2-blocks' ),
-// 		value: 'mb-0',
-// 	},
-// 	...customMarginOptions,
-// ];
-
 
 registerBlockType('wp-uikit2-blocks/grid', {
 	//https://getuikit.com/v2/docs/grid.html
@@ -59,7 +31,7 @@ registerBlockType('wp-uikit2-blocks/grid', {
 	// attributes are defined server side with register_block_type(). This is needed to make default attributes available in the blocks render callback.
 
 	edit({className, attributes, setAttributes}) {
-		const {gridGutter, isFluid, marginAfter} = attributes;
+		const {centerGrid, gridGutter, isFluid, marginAfter} = attributes;
 
 		// Ensure that isFluid value is set (when block gets added value is undefined -> use default value in this case)
 		if (isFluid === undefined) {
@@ -79,6 +51,13 @@ registerBlockType('wp-uikit2-blocks/grid', {
 							<a href={"https://getuikit.com/v2/docs/grid.html#grid-gutter"}>{__('Reference', 'wp-uikit2-blocks')}</a>
 						</div>
 					</PanelBody>
+					<PanelBody>
+						<ToggleControl
+							label={__("Center grid", "wp-uikit2-blocks")}
+							checked={centerGrid}
+							onChange={centerGrid => setAttributes({ centerGrid })}
+						/>
+					</PanelBody>
 					<PanelBody
 						title={__('Grid Gutter', 'wp-uikit2-blocks')}
 						initialOpen={true}
@@ -95,16 +74,6 @@ registerBlockType('wp-uikit2-blocks/grid', {
 							<a href={"https://getuikit.com/v2/docs/grid.html#grid-gutter"}
 							   target={"_blank"}>{__('Reference', 'wp-uikit2-blocks')}</a>
 						</div>
-					</PanelBody>
-					<PanelBody>
-						<CheckboxControl
-							label={__('Fluid', 'wp-uikit2-blocks')}
-							checked={isFluid}
-							onChange={(isChecked) => {
-								setAttributes({isFluid: isChecked});
-							}}
-						/>
-
 					</PanelBody>
 				</InspectorControls>
 				<div className={className}>
